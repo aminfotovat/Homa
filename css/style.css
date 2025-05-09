@@ -1,0 +1,446 @@
+@font-face {
+    font-family: 'iransans';
+    src: url("../font/IRANSansWeb(FaNum).ttf") format("truetype");
+}
+body{
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    font-family: iransans ;
+    background: url("../img/banner/background.jpg") no-repeat center fixed ;
+    background-size: cover;
+}
+.item{
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px #a3a3a3;
+    border: 3px solid #1D3557 ;
+    transform: scale(1);
+    transition: all linear 0.1s;
+}
+.item:hover{
+    transform: scale(1.009);
+    box-shadow: 1px 1px 15px #848484;
+
+}
+.pie-title-center {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.pie-value {
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    height: 40px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -20px;
+    line-height: 40px;
+}
+.owl-nav{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.owl-nav span{
+    /*font-weight: bold;*/
+    font-size: 40px;
+    margin: 20px 20px;
+}
+/*header start*/
+nav ,.header-2{
+    background: #1D3557;
+
+    border-bottom: 5px solid #68B833;
+}
+.header-2{
+    width: 100%;
+    /*transition: 0.5s;*/
+    z-index: 99999;
+    position: fixed;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.6);
+    top: 0;
+
+}
+.hamburger-menu{
+    background: url('../img/icons/icons8-hamburger-menu-64.png') center no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 120%
+}
+.menu li > a,.menu li > a{
+    color: white;
+    transition: linear all 0.2s;
+    padding: 13px 16px;
+    margin-bottom: 0;
+}
+.menu li{
+    cursor: pointer;
+    margin: 5px 0;
+}
+.menu li > a:hover,.menu li > a:hover{
+    color: #68B833;
+    text-shadow: 0 0 10px;
+}
+
+.logo{
+    width: 60px;
+}
+.login{
+    background: #68B833 ;
+    transition: all linear 0.2s;
+}
+.login:hover{
+    background: white;
+    color: #1D3557;
+    text-shadow: none;
+}
+.btn-active{
+    color: #68B833 !important;
+    text-shadow: 0 0 10px;
+}
+/*header end*/
+/*banner start*/
+.banner{
+    background: url('../img/banner/banner.jpg') no-repeat fixed;
+    background-size: cover;
+    height: auto;
+}
+.banner-filter{
+    background: rgba(29,53,87,0.8);
+    width: 100%;
+    height: 100%;
+}
+.b-desc{
+    background: rgba(29, 129, 97, 0.85);
+}
+.b-button{
+    text-align: center;
+    height: 50px;
+    margin:  0;
+    text-decoration: none;
+    padding: 12px 10px;
+    font-weight: bold;
+    color: #68B833 ;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.b-button:active {
+    box-shadow: 1px 1px 5px inset black;
+}
+#b-button-1{
+    background: #FCF4F1;
+    border-radius: 0 30px 30px  0;
+    border-left: 1px solid rgba(170, 170, 170, 0.56);
+}
+#b-button-2{
+    background: #FCEAE4;
+}
+#b-button-3{
+    background: #FBDACF;
+    border-radius: 30px 0 0 30px;
+    border-right: 1px solid rgba(170, 170, 170, 0.56);
+}
+/*banner end*/
+
+.s-box{
+    height: auto;
+    width: 280px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #a3a3a3;
+    border: 2px solid #68B833;
+    transform: scale(1);
+    transition: all linear 0.1s;
+}
+.s-box:hover{
+    transform: scale(1.009);
+    box-shadow: 1px 1px 15px #848484;
+
+}
+.s-box div p{
+    text-align: justify;
+    line-height: 35px;
+    padding: 0 5px;
+}
+.s-box div h4{
+    color: #106E5C;
+}
+.s-box div img{
+    filter: drop-shadow(1px 1px 5px);
+    width: 150px;
+    margin: 20px auto;
+}
+.call-box{
+    background: #1D3557;
+    height: auto;
+    box-shadow: 9px 9px 0 1px #68B833;
+}
+.call-box  div >p{
+    padding: 15px 0;
+}
+.call-num{
+    background: #68B833 ;
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+}
+.call-num span{
+    margin-right: 20px;
+    direction: ltr;
+}
+.call-num a{
+    background: url("../img/icons/call.png") center no-repeat white;
+    background-size: 60%;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 5px ;
+    border-radius: 30px;
+    width: 45px;
+    transition: all linear 0.25s;
+    height: 45px;
+}
+.call-num a:hover{
+    rotate: 70deg;
+}
+.glass{
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.diagonal{
+    background-color: #D1CCC0; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #e9e4d7, #a4b39e);
+}
+.contact-input{
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.6);
+    outline: transparent;
+    transition: all linear 0.2s;
+}
+.contact-input:focus{
+    border: 2px solid rgba(104, 184, 51, 0.6)
+}
+.contact-text{
+    height: 100%;
+    border-radius: 5px;
+    transition: all linear 0.2s;
+    margin-top: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.6);
+    outline: transparent;
+}
+.form-input{
+    width: 50%;
+}
+.form-area{
+    width: 50%;
+}
+.contact-text:focus{
+    border: 2px solid rgba(104, 184, 51, 0.6)
+}
+.submit-btn{
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 30px;
+    border:2px solid #68B833 ;
+    outline: transparent;
+    transition: linear 0.2s;
+}
+.submit-btn:hover{
+    background: #68B833;
+    color: white;
+}
+
+/*  footer start   */
+footer{
+    background: #1D3557;
+    border-top: 5px solid #68B833;
+}
+.copyright{
+    height: 40px;
+    background: #294875;
+}
+#instagram a{
+    background: url("../img/icons/instagram.png") no-repeat center white;
+}
+#telegram a{
+    background: url("../img/icons/telegram.png") no-repeat center white;
+}
+#whatsapp a{
+    background: url("../img/icons/whatsapp.png") no-repeat center white;
+}
+#facebook a{
+    background: url("../img/icons/facebook.png") no-repeat center white;
+}
+#facebook a,#whatsapp a, #instagram a, #telegram a{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    background-size: 60%;
+    margin: 0 5px;
+    transition: 0.2s;
+}
+#facebook a:hover,#whatsapp a:hover, #instagram a:hover, #telegram a:hover{
+    rotate: 30deg;
+}
+.call{
+    width: 60px;
+    height: 60px;
+    z-index: 99999;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: url("../img/icons/message-1.png") no-repeat  center white;
+    background-size: 70%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px black;
+    transition: 0.4s;
+}
+.call:hover{
+    background: url("../img/icons/message-2.png") no-repeat  center #1D3557;
+    background-size: 73%;
+}
+
+.go-up{
+    width: 50px;
+    height: 50px;
+    z-index: 99999;
+    position: fixed;
+    bottom: 10px;
+    display: none;
+    background: white;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(103, 103, 103, 0.6);
+    left: 10px;
+    transition: 0.25s;
+}
+.go-up:hover{
+    box-shadow: 1px 1px 12px rgba(81, 81, 81, 0.6);
+    bottom: 15px;
+    color: red;
+}
+.window{
+    background: #e5e5e5;
+    width: 100%;
+    height: 100%;
+    display: none
+;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.2)
+    );
+    backdrop-filter: blur(10px);
+}
+.box-contact{
+    background: #ECF0F1;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.glassy-form input{
+    border: 2px solid #1D3557 ;
+    transition: 0.2s;
+}
+.glassy-form textarea{
+    border: 2px solid #1D3557 ;
+}
+.glassy-form input:focus ,.glassy-form textarea:focus{
+    border: 3px solid #1D3557 !important;
+}
+.glassy-form input[type='submit']:hover{
+    background: #1D3557;
+}
+.close-glassy{
+    font-size: 25px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.close-glassy:hover{
+    font-size: 25px;
+    color: red;
+}
+.fun{
+    width: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*       responsive */
+@media (max-width:991px ) {
+    .s-box{
+        width: 45% !important;
+    }
+}
+@media (max-width:771px ) {
+    .s-box {
+        width: 100% !important;
+    }
+    .form-input{
+        width: 100%;
+    }
+    .form-area{
+        width: 100%;
+
+    }
+    .contact-text{
+        width: 100%;
+        height: 200px !important;
+    }
+    .btn1{
+        margin: 20px 0;
+    }
+}
+@media (min-width:769px ) {
+    .fun{
+        width: 150px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .glass{
+        height: auto;
+    }
+    .copyright{
+        height: auto;
+    }
+
+}
